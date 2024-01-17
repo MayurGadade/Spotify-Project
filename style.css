@@ -245,12 +245,32 @@ a{
 .music-player-btn img:hover{
     opacity: 1;
 }
-.progresbar{
+.Playback-bar{
     display: flex;
     justify-content: center;
-    margin-right: 1rem;
-}
+    /* margin-right: 1rem; */
+    align-items: center;
 
+}
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
 
 .controls{
     width: 25%;
@@ -264,11 +284,18 @@ a{
 .album-title{
     font-weight: 700;
     font-size: 0.8rem;
+    margin-bottom: 0;
+}
+.album-info{
+    align-items: center;
+    justify-content: center;
+    margin: auto 0 auto 0;
 }
 .album .album-info .album-title-info{
     font-weight: 400;
-        opacity: 0.8;
-
+    opacity: 0.8;
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
 }
 .album-icon{
     /* justify-content: center; */
